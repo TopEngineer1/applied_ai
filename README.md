@@ -29,10 +29,11 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # 3. Add your OpenAI API key
-echo "OPENAI_API_KEY=sk-..." > .env
+cp .env.example .env             # then edit .env and paste your key
 ```
 
-`.env` is listed in `.gitignore`, so your key is never committed.
+`.env` is listed in `.gitignore`, so your key is never committed. Only
+`.env.example`, which holds a placeholder value, is tracked.
 
 ## Running a demo
 
