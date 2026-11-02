@@ -6,7 +6,7 @@ It's shared by everything: your input + the model's output.
 
 Setup:
     pip install tiktoken openai python-dotenv
-    # .env next to this file:  OPENAI_API_KEY=sk-...
+    # .env in the repo root (see README):  OPENAI_API_KEY=sk-...
 
 Run:
     python context_window.py

@@ -6,7 +6,7 @@ Similar meaning -> vectors point in a similar direction.
 
 Setup:
     pip install openai python-dotenv
-    # .env next to this file:  OPENAI_API_KEY=sk-...
+    # .env in the repo root (see README):  OPENAI_API_KEY=sk-...
 
 Run:
     python embeddings.py
@@ -18,7 +18,7 @@ from openai import OpenAI
 
 try:
     from dotenv import load_dotenv
-    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+    load_dotenv()  # searches upward, so the repo-root .env is found
 except ImportError:
     pass
 

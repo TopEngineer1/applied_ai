@@ -7,7 +7,7 @@ If the start matches, those tokens are "cached": cheaper and faster.
 
 Setup:
     pip install openai python-dotenv
-    # .env next to this file:  OPENAI_API_KEY=sk-...
+    # .env in the repo root (see README):  OPENAI_API_KEY=sk-...
 
 Run:
     python promp_cache.py

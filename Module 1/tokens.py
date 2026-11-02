@@ -3,7 +3,7 @@ Tokenization 101 with tiktoken: English vs Hindi token counts and cost.
 
 Setup:
     pip install tiktoken openai python-dotenv
-    # .env next to this script:  OPENAI_API_KEY=sk-...
+    # .env in the repo root (see README):  OPENAI_API_KEY=sk-...
 
 Run:
     python tokens.py
@@ -14,7 +14,7 @@ import tiktoken
 
 try:
     from dotenv import load_dotenv
-    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+    load_dotenv()  # searches upward, so the repo-root .env is found
 except ImportError:
     print("Note: python-dotenv not installed, .env not loaded.")
 
