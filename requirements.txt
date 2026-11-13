@@ -9,3 +9,6 @@ tiktoken>=0.14
 
 # Environment / config (.env loading)
 python-dotenv>=1.2
+
+# Typed structured outputs (Module 2)
+pydantic>=2.14

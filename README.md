@@ -14,6 +14,13 @@ short, runnable scripts that show one concept at a time using real API calls.
 | `context_window.py` | What a context window is, how input and output share it, and what happens when you go over the limit. |
 | `promp_cache.py` | How OpenAI prompt caching makes repeated long prompts cheaper and faster. |
 
+### Module 2: Building with LLMs
+
+| Script | What it shows |
+| --- | --- |
+| `prompt_engineering.py` | Building a prompt one layer at a time (context, constraints, output format, examples), and why asking for JSON is not the same as getting it. |
+| `structured_output.py` | Going from asking for JSON to enforcing it: retries, JSON mode, strict JSON schemas, and Pydantic, plus the cases where even strict mode breaks. |
+
 More modules will be added as the course progresses.
 
 ## Setup
