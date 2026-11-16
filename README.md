@@ -20,6 +20,9 @@ short, runnable scripts that show one concept at a time using real API calls.
 | --- | --- |
 | `prompt_engineering.py` | Building a prompt one layer at a time (context, constraints, output format, examples), and why asking for JSON is not the same as getting it. |
 | `structured_output.py` | Going from asking for JSON to enforcing it: retries, JSON mode, strict JSON schemas, and Pydantic, plus the cases where even strict mode breaks. |
+| `why_rag.py` | Why RAG exists: pasting every document vs. retrieving one with keyword search, what each costs, and grounding the model so it says "I don't know". |
+| `chunking.py` | Cutting documents into chunks (fixed-size, overlapping, by heading, with the title carried in) and how a bad cut breaks the answer. |
+| `vector_search.py` | Retrieval by meaning: embedding chunks, brute-force cosine search, top-k, when you actually need a vector database, and where keyword search still wins. |
 
 More modules will be added as the course progresses.
 
