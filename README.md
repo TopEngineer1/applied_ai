@@ -23,6 +23,7 @@ short, runnable scripts that show one concept at a time using real API calls.
 | `why_rag.py` | Why RAG exists: pasting every document vs. retrieving one with keyword search, what each costs, and grounding the model so it says "I don't know". |
 | `chunking.py` | Cutting documents into chunks (fixed-size, overlapping, by heading, with the title carried in) and how a bad cut breaks the answer. |
 | `vector_search.py` | Retrieval by meaning: embedding chunks, brute-force cosine search, top-k, when you actually need a vector database, and where keyword search still wins. |
+| `eval_retrieval.py` | Measuring retrieval instead of eyeballing it: an eval set, recall@k and rank, and one table comparing keyword vs. embeddings, chunking strategies and k. |
 
 More modules will be added as the course progresses.
 
