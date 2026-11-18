@@ -23,7 +23,16 @@ short, runnable scripts that show one concept at a time using real API calls.
 | `why_rag.py` | Why RAG exists: pasting every document vs. retrieving one with keyword search, what each costs, and grounding the model so it says "I don't know". |
 | `chunking.py` | Cutting documents into chunks (fixed-size, overlapping, by heading, with the title carried in) and how a bad cut breaks the answer. |
 | `vector_search.py` | Retrieval by meaning: embedding chunks, brute-force cosine search, top-k, when you actually need a vector database, and where keyword search still wins. |
+
+### Module 3: Evaluating and Improving Retrieval
+
+Continues the Nimbus chatbot from Module 2, with the same docs.
+
+| Script | What it shows |
+| --- | --- |
 | `eval_retrieval.py` | Measuring retrieval instead of eyeballing it: an eval set, recall@k and rank, and one table comparing keyword vs. embeddings, chunking strategies and k. |
+| `hybrid_search.py` | Combining keyword and vector search (union, score averaging, Reciprocal Rank Fusion) and reranking with gpt-4o-mini and with Cohere's reranker, each measured with lesson 12's eval set. Uses `retriever.py`, the shared retrieval code from earlier lessons. |
+| `ask.py` | The finished RAG chatbot: hybrid retrieval, reranking and a grounded prompt in about 30 lines, built on `retriever.py`. Type a question about the Nimbus docs. |
 
 More modules will be added as the course progresses.
 
@@ -42,6 +51,9 @@ pip install -r requirements.txt
 # 3. Add your OpenAI API key
 cp .env.example .env             # then edit .env and paste your key
 ```
+
+Module 3's `hybrid_search.py` also needs a `COHERE_API_KEY` in `.env`. A free
+trial key from https://dashboard.cohere.com/api-keys is enough.
 
 `.env` is listed in `.gitignore`, so your key is never committed. Only
 `.env.example`, which holds a placeholder value, is tracked.
